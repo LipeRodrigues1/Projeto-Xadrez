@@ -1,0 +1,15 @@
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\bin\Debug\net8.0\Projeto-Xadrez.exe
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\bin\Debug\net8.0\Projeto-Xadrez.deps.json
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\bin\Debug\net8.0\Projeto-Xadrez.runtimeconfig.json
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\bin\Debug\net8.0\Projeto-Xadrez.dll
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\bin\Debug\net8.0\Projeto-Xadrez.pdb
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.AssemblyInfoInputs.cache
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.AssemblyInfo.cs
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.csproj.CoreCompileInputs.cache
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.sourcelink.json
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.dll
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\refint\Projeto-Xadrez.dll
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.pdb
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\Projeto-Xadrez.genruntimeconfig.cache
+C:\Users\Fellipe\OneDrive\Desktop\Fellipe\Projeto-Xadrez\obj\Debug\net8.0\ref\Projeto-Xadrez.dll
