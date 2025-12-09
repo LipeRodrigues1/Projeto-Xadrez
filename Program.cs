@@ -1,17 +1,13 @@
-﻿using Projeto_Xadrez.Tabuleiro;
+﻿using Projeto_Xadrez;
+using Projeto_Xadrez.Tabuleiro;
 
-try
-{
-    
-}
-catch (System.Exception)
-{
-
-    throw;
-}
-
-Posicao p = new(4,4);
-System.Console.WriteLine(p);
 
 Tabuleiro tab = new(8,8);
+
+tab.ColocarPeca(new Torre(tab,Cor.Preta), new Posicao(0,0));
+tab.ColocarPeca(new Torre(tab,Cor.Preta), new Posicao(1,3));
+tab.ColocarPeca(new Rei(tab,Cor.Preta), new Posicao(2,4));
+
+
+
 Tela.Imprimir(tab);

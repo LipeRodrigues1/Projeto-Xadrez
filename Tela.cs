@@ -8,13 +8,13 @@ public class Tela
         {
             for (int j = 0; j < tab.Colunas; j++)
             {
-                if (tab.Peca(i, j) == null)
+                if (tab.peca(i, j) == null)
                 {
                     System.Console.Write("- ");
                 }
                 else
                 {
-                    System.Console.WriteLine(tab.Peca(i, j) + " ");
+                    System.Console.WriteLine(tab.peca(i, j) + " ");
                 }
             }
             System.Console.WriteLine();
