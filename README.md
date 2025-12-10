@@ -22,6 +22,8 @@ cd projeto-xadrez
 
 8. Abra sua IDE e execute: dotnet run
 
+9. Para mover as peças é necessario escolher uma letra e número correspondente a casa desejada!
+
 ## 🖼️ Exemplo do Tabuleiro
 
 Visualização inicial do tabuleiro no terminal:
