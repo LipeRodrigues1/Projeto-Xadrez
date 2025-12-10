@@ -9,4 +9,10 @@ public class Posicao(int linha, int coluna)
     {
         return $"Linha: {Linha}, Coluna: {Coluna}";
     }
+
+    public void DefinirValores(int linha, int coluna)
+    {
+        Linha = linha;
+        Coluna = coluna;
+    }
 }

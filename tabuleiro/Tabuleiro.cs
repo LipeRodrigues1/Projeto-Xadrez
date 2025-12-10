@@ -1,4 +1,5 @@
-﻿namespace Projeto_Xadrez.Tabuleiro;
+﻿
+namespace Projeto_Xadrez.Tabuleiro;
 
 public class Tabuleiro(int linhas, int colunas)
 {
@@ -64,4 +65,8 @@ public class Tabuleiro(int linhas, int colunas)
         }
     }
 
+    internal bool posicaoValida(Posicao pos)
+    {
+        throw new NotImplementedException();
+    }
 }
