@@ -2,18 +2,27 @@
 using Projeto_Xadrez.Tabuleiro;
 try
 {
-    Tabuleiro tab = new(8, 8);
+    PartidaXadrez patida = new();
+    while (!patida.Terminada)
+    {
+        Console.Clear();
+        Tela.Imprimir(patida.tab);
+        System.Console.Write("Origem: ");
+        Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
+        System.Console.Write("Destino: ");
+        Posicao destino = Tela.LerPosicaoXadrez().ToPosicao();
 
-    tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-    tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-    tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
+        // PartidaXadrez.ExecutaMovimento(origem,destino);
+
+    }
 
 
 
-    Tela.Imprimir(tab);
+
+
 }
 catch (TabuleiroException e)
 {
 
-    System.Console.WriteLine(e.Message);;
+    System.Console.WriteLine(e.Message); ;
 }

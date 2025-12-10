@@ -7,5 +7,10 @@ public class Peca(Tabuleiro tab, Cor cor)
     public int QteMovimentos { get; protected set; } = 0;
     public Tabuleiro Tab { get; protected set; } = tab;
 
+    public void IncrementarMovi()
+    {
+        QteMovimentos++;
+    }
+
     
 }

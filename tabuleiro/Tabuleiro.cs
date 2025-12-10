@@ -1,5 +1,4 @@
-﻿
-namespace Projeto_Xadrez.Tabuleiro;
+﻿namespace Projeto_Xadrez.Tabuleiro;
 
 public class Tabuleiro(int linhas, int colunas)
 {
@@ -31,6 +30,20 @@ public class Tabuleiro(int linhas, int colunas)
         p.Posi = pos;
     }
 
+    public Peca RetirarPeca(Posicao pos)
+    {
+        if (peca(pos) == null)
+        {
+            return null;
+        }
+        else
+        {
+            Peca aux = peca(pos);
+            aux.Posi = null;
+            pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
+        }
+    }
     public bool PosicaoValida(Posicao pos)
     {
         if (pos.Linha < 0 || pos.Linha >= Linhas || pos.Coluna < 0 || pos.Coluna >= Colunas)
