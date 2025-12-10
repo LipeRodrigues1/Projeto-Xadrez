@@ -1,18 +1,27 @@
 ﻿namespace Projeto_Xadrez.Tabuleiro;
 
-public class Posicao(int linha, int coluna)
+class Posicao
 {
-    public int Linha { get; set; } = linha;
-    public int Coluna { get; set; } = coluna;
+
+    public int linha { get; set; }
+    public int coluna { get; set; }
+
+    public Posicao(int linha, int coluna)
+    {
+        this.linha = linha;
+        this.coluna = coluna;
+    }
+
+    public void definirValores(int linha, int coluna)
+    {
+        this.linha = linha;
+        this.coluna = coluna;
+    }
 
     public override string ToString()
     {
-        return $"Linha: {Linha}, Coluna: {Coluna}";
-    }
-
-    public void DefinirValores(int linha, int coluna)
-    {
-        Linha = linha;
-        Coluna = coluna;
+        return linha
+            + ", "
+            + coluna;
     }
 }

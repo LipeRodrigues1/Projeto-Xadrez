@@ -1,19 +1,28 @@
 ﻿using Projeto_Xadrez.Tabuleiro;
-
 namespace Projeto_Xadrez.Xadrez;
 
-public class PosicaoXadrez(char coluna, int linha)
+class PosicaoXadrez
 {
-    public char Coluna { get; set; } = coluna;
-    public int Linha { get; set; } = linha;
-    
-    public Posicao ToPosicao()
+
+    public char coluna { get; set; }
+    public int linha { get; set; }
+
+    public PosicaoXadrez(char coluna, int linha)
     {
-        return new Posicao(8 - Linha, Coluna - 'a');
+        this.coluna = coluna;
+        this.linha = linha;
+    }
+
+    public Posicao toPosicao()
+    {
+        return new Posicao(8 - linha, coluna - 'a');
     }
 
     public override string ToString()
     {
-        return "" + Coluna + Linha;
+        return "" + coluna + linha;
     }
 }
+
+
+

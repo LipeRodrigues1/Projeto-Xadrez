@@ -1,21 +1,51 @@
 ﻿namespace Projeto_Xadrez.Tabuleiro;
 
-public abstract class Peca(Tabuleiro tab, Cor cor)
+abstract class Peca
 {
-    public Posicao? Posicao { get; set; } = null;
-    public Cor Cor { get; protected set; } = cor;
-    public int QteMovimentos { get; protected set; } = 0;
-    public Tabuleiro Tab { get; protected set; } = tab;
 
-    public void IncrementarMovi()
+    public Posicao posicao { get; set; }
+    public Cor cor { get; protected set; }
+    public int qteMovimentos { get; protected set; }
+    public Tabuleiro tab { get; protected set; }
+
+    public Peca(Tabuleiro tab, Cor cor)
     {
-        QteMovimentos++;
+        this.posicao = null;
+        this.tab = tab;
+        this.cor = cor;
+        this.qteMovimentos = 0;
     }
-    public void DecrementarQteMovimentos()
+
+    public void incrementarQteMovimentos()
     {
-        QteMovimentos--;
+        qteMovimentos++;
     }
 
-    public abstract bool[,] MovimentosPossiveis();
+    public void decrementarQteMovimentos()
+    {
+        qteMovimentos--;
+    }
 
+    public bool existeMovimentosPossiveis()
+    {
+        bool[,] mat = movimentosPossiveis();
+        for (int i = 0; i < tab.linhas; i++)
+        {
+            for (int j = 0; j < tab.colunas; j++)
+            {
+                if (mat[i, j])
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public bool movimentoPossivel(Posicao pos)
+    {
+        return movimentosPossiveis()[pos.linha, pos.coluna];
+    }
+
+    public abstract bool[,] movimentosPossiveis();
 }
